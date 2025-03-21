@@ -130,6 +130,8 @@ const db = getDatabase(app)
 const analytics = getAnalytics(app);
 
 document.getElementById("submit").addEventListener('click', function(e){
+    e.preventDefault(); // Prevent the form from submitting the traditional way
+
     // Get the user's input for name, message, and image
     var name = document.getElementById('name').value;
     var message = document.getElementById('message').value;
@@ -152,6 +154,8 @@ document.getElementById("submit").addEventListener('click', function(e){
 });
 
 function retrieveTributes() {
+
+
     //tributeRef stores tributes from the tribute table
     const tributeRef = ref(db, 'tribute/');
 
@@ -290,3 +294,5 @@ retrieveTributes();
 //             // Append the new carousel-item to the carousel-inner
 //             carouselInner.appendChild(newCarouselItem);
 //         }
+
+//test line
