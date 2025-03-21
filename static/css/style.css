@@ -37,9 +37,7 @@
     margin-top: 5rem;
 }
 
-.card-img, .card-img-bottom, .card-img-top {
-    height: 200px;
-}
+
 
 .link-section {
     margin-top: 1vh;
@@ -64,10 +62,6 @@
     margin: 0;
 }
 
-.carousel {
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 
 .link-section .all-links {
     margin-top: 5%;
@@ -208,4 +202,139 @@
 
 .footer .footer-box-container .footer-box-spacer {
     margin: 5%;
+}
+
+.carousel {
+    background-color: rgba(239, 235, 228);
+}
+
+.carousel-item {
+    transition: transform 2s ease-in-out !important; /* Adjust the time (2s) as needed */
+}
+
+.carousel .carousel-section-header h3 {
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+    float: right;
+    text-align: center;
+    color: var(--main-brown);
+    margin-right: 5%
+}
+
+.carousel .carousel-inner {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.carousel .card {
+    border: none !important;
+}
+
+.carousel .card-body {
+    background-color: rgba(239, 235, 228);
+}
+
+.carousel .card .card-title {
+    border: inset var(--main-brown-light) 2px;
+    background-color: var(--main-brown);
+    color: white;
+    padding: 1rem;
+}
+
+.carousel .card .card-text {
+    border: inset var(--main-brown-light) 2px;
+    padding: 1rem;
+    background-color: white;
+    color: var(--main-brown);
+    font-style: oblique;
+}
+
+
+.add-tributes {
+    font-family: Arial, sans-serif;
+    background-color: rgba(239, 235, 228);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    margin-bottom: 1rem
+}
+
+.add-tributes .box {
+    display: flex;
+}
+
+#nameLabel {
+    font-size: 3rem;
+}
+
+#form-container {
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid black 2px;
+    padding: 4%;
+}
+
+#form-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+#message {
+    border: none;
+    background-color: rgba(239, 235, 228);
+    width: 100%;
+    height: 17rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#form-container button {
+    width: 31%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--main-brown);
+    border: 3px inset var(--main-brown-light);
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#form-container input {
+    width: 100%;
+    margin-left: 5%;
+    font-size: 2rem;
+    border: none;
+    background-color: rgba(239, 235, 228);
+
+}
+
+#submit {
+    background-color: #8c4d30;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #7a4026;
+}
+
+#form-container input:focus, 
+#form-container textarea:focus {
+    outline: none; /* Removes the outline when focused */
+    border: 1px solid #c4c4c4; /* Optional: keeps the border color when focused */
 }

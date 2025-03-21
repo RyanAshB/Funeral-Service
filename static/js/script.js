@@ -186,14 +186,14 @@ function displayCard(pseudo) {
     //create a new card element
     var newCard = document.createElement('div');
     newCard.classList.add('card');
-    newCard.style.width = '18rem';
+    newCard.style.width = '25rem';
 
     //creates a card body to add to the card
     var cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
     
     //creates a card title to add to the card
-    var cardTitle = document.createElement('h5');
+    var cardTitle = document.createElement('h3');
     cardTitle.classList.add('card-title');
     cardTitle.textContent = pseudo.username;
     cardBody.appendChild(cardTitle);

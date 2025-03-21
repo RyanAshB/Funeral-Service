@@ -36,25 +36,33 @@
         <img src="{{ url_for('static', filename='images/life-of.jpg') }}">
     </div>
 
-    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="false">
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="7000">
+        <div class="banner">
+            <p class="banner">LINKS</p>
+        </div>
+
+        <div class="carousel-section-header">
+            <h3> Write a Tribute (see pop-up<br>example below)</h3>
+        </div>
+
         <div class="carousel-inner">
-            <!-- <div class="carousel-item active" id="tributes-container">
+            <div class="carousel-item active" id="tributes-container">
                 <div class="card-wrapper container-sm d-flex  justify-content-around">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Card title 1</h5>
+                        <h3 class="card-title">Card title 1</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
+                        <h3 class="card-title">Card title 2</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Card title 3</h5>
+                        <h3 class="card-title">Card title 3</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -62,27 +70,27 @@
             </div>
             <div class="carousel-item">
                 <div class="card-wrapper container-sm d-flex   justify-content-around">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Card title 4</h5>
+                        <h3 class="card-title">Card title 4</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
-                        <h5 class="card-title">Card title 5</h5>
+                        <h3 class="card-title">Card title 5</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                    <div class="card" style="width: 25rem;">
+                        <!-- <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="..."> -->
                         <div class="card-body">
-                        <h5 class="card-title">Card title 6</h5>
+                        <h3 class="card-title">Card title 6</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -92,36 +100,26 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        
     </div>
 
-    <!-- <div class="add-tributes">
-        <form action='' id="form-container">
-            <label for="message">Name:</label>
-            <input type="text" id="name" placeholder="Enter Name">
-            
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Write your tribute here..."></textarea>
-
-            <label for="image-upload">Upload Picture:</label>
-            <input type="file" id="image-upload" accept="image/*">
-            
-            <button onclick="displayMessage()">Submit Tribute</button>
-        </form>
-    </div> -->
 
     <div class="add-tributes">
-        <form action='' id="form-container">
-            <label for="message">Name:</label>
-            <input type="text" id="name" placeholder="Enter Name">
             
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Write your tribute here..."></textarea>
-
-            <label for="image-upload">Upload Picture:</label>
-            <input type="file" id="image-upload" accept="image/*">
+        <form action='' id="form-container">
+            <div class = "box">
+                <label id="nameLabel" for="name">Name:</label>
+                <input type="text" id="name" placeholder="">
+            </div>
+            
+            <div class = "box">
+                <textarea id="message" placeholder="Write your tribute here..."></textarea>
+            </div>
             
             <button type="submit" value="submit" id="submit">Submit Tribute</button>
         </form>
+    
     </div>
 
     <div class="link-section" id="links">
@@ -260,6 +258,23 @@
             })
         })
     </script> -->
+
+    <script>
+        // Get the carousel element
+        const carousel = document.getElementById('carouselExampleControls');
+        
+        // Pause the carousel when mouse enters
+        carousel.addEventListener('mouseenter', function () {
+            const carouselInstance = new bootstrap.Carousel(carousel);
+            carouselInstance.pause();  // Pause the carousel
+        });
+        
+        // Resume the carousel when mouse leaves
+        carousel.addEventListener('mouseleave', function () {
+            const carouselInstance = new bootstrap.Carousel(carousel);
+            carouselInstance.cycle();  // Resume the carousel
+        });
+    </script>
 
     <script type="module" src="{{ url_for('static', filename='js/script.js') }}"></script>
     
