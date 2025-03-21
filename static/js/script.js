@@ -268,7 +268,6 @@ function displayCard(pseudo) {
          // Clear the input fields after submission
     document.getElementById('name').value = '';
     document.getElementById('message').value = '';
-    document.getElementById('image-upload').value = ''; // Clear the file input after submission
 
 }
 
