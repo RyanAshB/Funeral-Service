@@ -1,0 +1,211 @@
+/* General styling */
+:root {
+    --main-brown: rgba(97,61,41);
+    --main-brown-light: rgb(185, 148, 128);
+    --main-background: rgba(239,235,228);
+    
+  }
+
+.bg-body-tertiary {
+    background-color: var(--main-brown) !important;
+}
+
+.bg-body-tertiary .nav-link {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 8rem 0 0 !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    padding-left: 33rem !important;
+}
+
+.first-section img {
+    width: 100%;
+}
+
+.tributes .tribute-display .card {
+    width: 18rem;
+    height: 26rem;
+}
+
+.tributes .tribute-display {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    height: 200px;
+}
+
+.link-section {
+    margin-top: 1vh;
+    background-color: rgba(239,235,228);
+    padding-bottom: 1rem;
+}
+
+.banner {
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-brown);
+    color: white;
+    font-size: 1.25rem;
+    margin-left: 4vw;
+}
+
+.banner p {
+    padding-top: 5px;
+    margin: 0;
+}
+
+.carousel {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.link-section .all-links {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 25%;
+
+}
+
+.link-section .all-links .link {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.link-section .all-links img{
+    width: 276px;
+}
+
+.link-section .all-links .link .link-text {
+    width: 100%;
+    border: inset black;
+    border-width: 2px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 7%;
+    color: var(--main-brown);
+}
+
+.gallery-section {
+    background-color: var(--main-background);
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.gallery-section .gallery-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-section .gallery-container .gallery-item .gallery-item-text {
+    margin-top: 1rem;
+    border: inset var(--main-brown-light);
+    border-width: 2px;
+    text-align: center;
+    color: var(--main-brown-light);
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.quote-section {
+    margin-top: 1rem;
+    background-color: rgba(239,235,228);
+    padding-bottom: 1rem;
+    color: white;
+    position: relative;
+    isolation: isolate;
+}
+
+.quote-section::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: pink;
+    opacity: .7;
+    background-image: url('/static/images/brown-background.jpg');
+
+}
+
+.quote-section .quote-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.quote-section .quote-container h3 {
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+}
+
+.quote-section .quote-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 27%;
+}
+
+.quote-section .quote-text i {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.quote-section .quote-text-container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: var(--main-brown);
+    margin-top: 1rem;
+    color: white;
+}
+
+.footer .footer-container {
+    margin: 10%;
+    margin-top: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footer .footer-container h3 {
+    font-size: 3rem;
+    font-family: "Cinzel", serif;
+}
+
+.footer .footer-box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.footer .footer-box-container .footer-box {
+    border:white 1.5px;
+    border-style: outset;
+}
+
+.footer .footer-box-container h5 {
+    margin-bottom: 10%;
+}
+
+.footer .footer-box-container .footer-box-spacer {
+    margin: 5%;
+}

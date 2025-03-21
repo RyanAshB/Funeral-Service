@@ -1,659 +1,270 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Future Forward - Bootstrap 5 CSS Template</title>
-
-    <!-- CSS FILES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Business</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
-
-    <link href="{{ url_for('static', filename='folder_1/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <link href="{{ url_for('static', filename='folder_1/css/bootstrap-icons.css') }}" rel="stylesheet">
-
-    <link href="{{ url_for('static', filename='folder_1/css/templatemo-festava-live.css') }}" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-
-
-    <!--
-
-TemplateMo 583 Festava Live
-
-https://templatemo.com/tm-583-festava-live
-
--->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+
 <body>
-
-    <main>
-
-        <header class="site-header">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 d-flex flex-wrap">
-                        <p class="d-flex me-4 mb-0">
-                            <i class="bi-person custom-icon me-2"></i>
-                            <strong class="text-dark">FutureForward Summit 2025</strong>
-                        </p>
-                    </div>
-
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleControls">TRIBUTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">LINKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">GALLERY</a>
+                    </li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </nav>
 
+    <div class="first-section">
+        <img src="{{ url_for('static', filename='images/life-of.jpg') }}">
+    </div>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    FutureForward Summit 2025
-                </a>
-
-                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">Benefits</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Objectives</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Attendance</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_6">Speakers</a>
-                        </li>
-                    </ul>
-
-                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
-                </div>
-            </div>
-        </nav>
-
-        
-
-        <section class="hero-section" id="section_1">
-            <div class="section-overlay"></div>
-
-            <div class="container d-flex justify-content-center align-items-center">
-                <div class="row">
-
-                    <div class="col-12 mt-auto mb-5 text-center">
-                        
-
-                        <h2 class="text-white mb-5">The Power of AI<br>in Corporate Transformation<br>Leveraging Tools to<br>Innovate and Accelerate Your Business</h2>
-
-                        <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="tributes-container">
+                <div class="card-wrapper container-sm d-flex  justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-
-                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
-                        <div class="date-wrap">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-clock me-2"></i>
-                                27 - 28<sup>th</sup>, March 2025
-                            </h5>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
-
-                        <div class="location-wrap mx-auto py-3 py-lg-0">
-                            <h5 class="text-white">
-                                <i class="custom-icon bi-geo-alt me-2"></i>
-                                Hyatt Regency Trinidad, Trinidad and Tobago
-                            </h5>
-                        </div>
-
-                        <div class="social-share">
-                            <ul class="social-icon d-flex align-items-center justify-content-center">
-                                <span class="text-white me-3">Share:</span>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-facebook"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-twitter"></span>
-                                    </a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link">
-                                        <span class="bi-instagram"></span>
-                                    </a>
-                                </li>
-                            </ul>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="video-wrap">
-                <!-- <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                    <source src="{{ url_for('static', filename='video/pexels-2022395.mp4') }}" type="video/mp4">
-
-                    Your browser does not support the video tag.
-                </video> -->
-
-                <img src="{{ url_for('static', filename='folder_1/images/pexels-alexander-suhorucov-6457579.jpg') }}">
-            </div>
-        </section>
-
-        <section class="timer">
-            <div class="launch-time">
-                <div>
-                    <h1 id="days">00</h1>
-                    <span>Days</span>
-                </div>
-                <div>
-                    <h1 id="hours">00</h1>
-                    <span>Hours</span>
-                </div>
-                <div>
-                    <h1 id="minutes">00</h1>
-                    <span>Minutes</span>
-                </div>
-                <div>
-                    <h1 id="seconds">00</h1>
-                    <span>Seconds</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section section-padding" id="section_2">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
-                        <div class="services-info">
-                            <h2 class="text-white mb-4">Special Benefits of attending this Summit:</h2>
-
-                            <p class="text-white">Attending the <strong>FutureForward Summit 2025</strong> under the theme <strong>"Leading with AI and
-                                Innovation in Business and Entrepreneurship"</strong> offers participants a unique
-                                opportunity to engage with cutting-edge AI technologies, gain deep insights into future
-                                business trends, and explore innovative entrepreneurial opportunities. The summit
-                                provides exclusive access to AI experts, industry leaders, and investors, fostering
-                                valuable networking and potential partnerships that can drive business growth.
-                                Ultimately, the summit offers an unmatched platform for staying ahead of AI trends,
-                                fostering innovation, and gaining a competitive edge in business.</p>
+            <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex   justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="about-text-wrap">
-                            <img src="{{ url_for('static', filename='folder_1/images/pexels-alexander-suhorucov-6457579.jpg') }}" class="about-image img-fluid">
-
-                            <div class="about-text-info d-flex">
-                                <div class="d-flex">
-                                    <i class="about-text-icon bi-person"></i>
-                                </div>
-
-
-                                <div class="ms-4">
-                                    <h3>Lorem, ipsum dolor.</h3>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet.</p>
-                                </div>
-                            </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-
+                    <div class="card" style="width: 18rem;">
+                        <!-- <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="..."> -->
+                        <div class="card-body">
+                        <h5 class="card-title">Card title 6</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
-        <section class="conference-objectives-section section-padding" id="section_3">
-            <div class="col-12 text-center">
-                <h2 class="mb-4"><strong>Summit Objectives</strong></h2>
-            </div>
-
-            <div class="objectives-list-container">
-                <div class="">
-                    <ul class="list-unstyled">
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Explore the Role of AI in Shaping Future Business Models</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Highlight AI’s potential in driving sustainability, efficiency, and scalability in business operations, encouraging leaders to adopt AI-driven technologies for long-term success</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Discuss how AI is transforming business models across industries, enhancing decision-making, optimizing operations, and enabling innovative customer experiences.</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Present cutting-edge AI tools and solutions that empower entrepreneurs to launch, grow, and scale their businesses effectively in a competitive landscape</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Create networking opportunities between AI experts, business executives, and startups to foster partnerships that can accelerate AI innovation and business transformation</span></div></li>
-                    </ul>
-                </div>
-
-                <div class="">
-                    <ul class="list-unstyled">
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Address the Ethical Implications and Responsible Use of AI</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Provide practical strategies and frameworks for integrating AI into existing business processes, addressing challenges, and maximizing the benefits of AI technologies.</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Inspire entrepreneurs to leverage AI to drive innovation, solve pressing market challenges, and create new opportunities for economic growth and societal impact.</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Explore the impact of AI on jobs and the future of work, discussing strategies for upskilling and reskilling the workforce to thrive in AI-driven economies.</span></div></li>
-                        <li><div class="icon-text-container"><i class="fa-solid fa-circle-check fa-2x"></i> <span class="objectives-text">Encourage Investment in AI and Innovation</span></div></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- <div class="add-tributes">
+        <form action='' id="form-container">
+            <label for="message">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name">
             
-        </section>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Write your tribute here..."></textarea>
 
-        <section class="learning-objectives-section section-padding" id="section_4">
-            <div class="col-12 text-center">
-                <h2 class="mb-4"><strong>Learning Objectives</strong></h2>
-            </div>
-
-            <div class="timeline">
-                <div class="container left-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Participants will gain a deep understanding of how AI is reshaping industries,
-                            from automating operations to enhancing decision-making and customer
-                            engagement.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container right-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Learn how AI can be a key driver for innovation and competitive advantage in
-                            business.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container left-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Attendees will learn practical frameworks and strategies to integrate AI into their
-                            business models and operations, helping them drive growth, efficiency, and
-                            innovation</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container right-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Participants will acquire leadership skills necessary for navigating the AI era,
-                            such as leveraging data for decision-making, fostering innovation, and guiding
-                            teams through AI-driven change</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container left-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Attendees will be able to identify emerging market opportunities and innovative
-                            business models that leverage AI, empowering entrepreneurs to capitalize on AI
-                            advancements</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container right-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Gain insights into AI-driven startup ecosystems and how to scale AI-based
-                            businesses</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container left-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Understand the ethical implications of AI deployment, including issues of data
-                            privacy, bias, and responsible innovation.</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container right-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Participants will discover how AI can accelerate product development, enhance
-                            customer experiences, and drive service innovation across industries</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container left-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Participants will learn to utilize AI-driven insights and tools to make more
-                            informed, data-driven decisions that can enhance business agility and
-                            performance</p>
-                        <span class="left-container-arrow"></span>
-                    </div>
-                </div>
-
-                <div class="container right-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                        <circle cx="8" cy="8" r="8"/>
-                      </svg>
-                    <div class="text-box">
-                        <p>Learn about the future landscape of work and the impact AI will have on
-                            workforce roles, job creation, and upskilling.</p>
-                        <span class="right-container-arrow"></span>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="attendance" id="section_5">
-            <div class="col-12 text-center">
-                <h2 class="mb-4"><strong>Who Should Attend?</strong></h2>
-            </div>
-
-            <div class="person person-left">
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/entrepreneur.jpeg') }}">
-                <h3>Entrepreneurs</h3>
-            </div>
-            <hr>
-            <div class="person person-right">
-                <h3>CEO & Top Executives</h3>
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/ceo.jpeg') }}">
-            </div>
-            <hr>
-            <div class="person person-left">
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/startup.jpeg') }}">
-                <h3>Start-Up Founders</h3>
-            </div>
-            <hr>
-            <div class="person person-right">
-                <h3>Business Executives</h3>
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/business-executives.jpeg') }}">
-            </div>
-            <hr>
-            <div class="person person-left">
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/sales.jpeg') }}">
-                <h3>Sales and Marketing Professionals</h3>
-            </div>
-            <hr>
-            <div class="person person-right">
-                <h3>Investors</h3>
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/investor.jpeg') }}">
-            </div>
-            <hr>
-            <div class="person person-left">
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/sales.jpeg') }}">
-                <h3>Government officials</h3>
-            </div>
-            <hr>
-            <div class="person person-right">
-                <h3>Leaders and captains of industries</h3>
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/investor.jpeg') }}">
-            </div>
-            <hr>
-            <div class="person person-left">
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/sales.jpeg') }}">
-                <h3>Anyone seeking to elevate their business acumen and expand their professional
-                    network</h3>
-            </div>
-            <hr>
-            <div class="person person-right">
-                <h3>Top Managers and Administrators</h3>
-                <img src="{{ url_for('static', filename='folder_1/images/attendance/investor.jpeg') }}">
-            </div>
-        </section>
-
-        <section class="speakers-section" id="section_6">
-            <div class="col-12 text-center">
-                <h2 class="mb-4"><strong>Our Speakers</strong></h2>
-            </div>
-            <div class="speakers">
-                <div class="slider">
-                    <span style="--i:1;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/investor.jpeg') }}">
-                        <h3>Ryan Badaloo</h3>
-                    </span>
-                    <span style="--i:2;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/business-executives.jpeg') }}">
-                        <h3>John Doe</h3>
-                    </span>
-                    <span style="--i:3;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/ceo.jpeg') }}">
-                        <h3>James Smith</h3>
-                    </span>
-                    <span style="--i:4;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/entrepreneur.jpeg') }}">
-                        <h3>Michael Barnes</h3>
-                    </span>
-                    <span style="--i:5;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/sales.jpeg') }}">
-                        <h3>Grace Kennedy</h3>
-                    </span>
-                    <span style="--i:6;">
-                        <img src="{{ url_for('static', filename='folder_1/images/attendance/startup.jpeg') }}">
-                        <h3>Hello World</h3>
-                    </span>
-                </div>
-            </div>
+            <label for="image-upload">Upload Picture:</label>
+            <input type="file" id="image-upload" accept="image/*">
             
-        </section>
+            <button onclick="displayMessage()">Submit Tribute</button>
+        </form>
+    </div> -->
 
-    </main>
+    <div class="add-tributes">
+        <form action='' id="form-container">
+            <label for="message">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Write your tribute here..."></textarea>
 
+            <label for="image-upload">Upload Picture:</label>
+            <input type="file" id="image-upload" accept="image/*">
+            
+            <button type="submit" value="submit" id="submit">Submit Tribute</button>
+        </form>
+    </div>
 
-    <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container">
-                <div class="row">
+    <div class="link-section" id="links">
+        <div class="banner">
+            <p class="banner">LINKS</p>
+        </div>
 
-                    <div class="col-lg-6 col-12">
-                        <h3 class="text-white mb-lg-0">FUTUREFORWARD SUMMIT 2025</h3>
+        <div class="all-links">
+            <div class="link">
+                <img src="{{ url_for('static', filename='images/life-of-2.jpg') }}">
+                <div class="link-text">
+                    <p>Some text describing the link goes here</p>
+                </div>
+            </div>
+
+            <div class="link">
+                <img src="{{ url_for('static', filename='images/life-of-2.jpg') }}">
+                <div class="link-text">
+                    <p>Some text describing the link goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-section" id="gallery">
+        <div class="banner">
+            <p class="banner">Gallery</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery-image-1.jpg') }}">
+                <div class="gallery-item-text">
+                    <p>This is text describing the image</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery-image-2.jpg') }}">
+                <div class="gallery-item-text">
+                    <p>This is text describing the image</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <div class="quote-container">
+            <h3>Pastor Wong Quotes</h3>
+
+            <div class="quote-text-container">
+                <div class="quote-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nostrum deleniti facilis dolore cupiditate esse quidem beatae adipisci facere! Dignissimos mollitia expedita est tempore. Quo dignissimos deleniti laborum impedit ullam.
+                </div>
+
+                <div class="quote-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nostrum deleniti facilis dolore cupiditate esse quidem beatae adipisci facere! Dignissimos mollitia expedita est tempore. Quo dignissimos deleniti laborum impedit ullam.
+                </div>
+
+                <div class="quote-text">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nostrum deleniti facilis dolore cupiditate esse quidem beatae adipisci facere! Dignissimos mollitia expedita est tempore. Quo dignissimos deleniti laborum impedit ullam.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <h3>Tri-City Tabernacle</h3>
+
+            <div class="footer-box-container">
+                <div class="footer-box" id="location">
+                    <div class="footer-box-spacer">
+                        <h5>Location</h5>
+                        <p>123 Anywhere St., Any City ST 12345</p>
+                        <p>1123-456-7890</p>
+                        <p>hello@reallygreatsite.com</p>
                     </div>
+                </div>
 
-                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
-                        <ul class="social-icon d-flex justify-content-lg-end">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-twitter"></span>
-                                </a>
-                            </li>
+                <div class="footer-box" id="office-hours">
+                    <div class="footer-box-spacer">
+                        <h5>Location</h5>
+                        <p>123 Anywhere St., Any City ST 12345</p>
+                        <p>1123-456-7890</p>
+                        <p>hello@reallygreatsite.com</p>
+                    </div>
+                </div>
 
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-apple"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-instagram"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-youtube"></span>
-                                </a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link">
-                                    <span class="bi-pinterest"></span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="footer-box" id="get-social">
+                    <div class="footer-box-spacer">
+                        <h5>Location</h5>
+                        <p>123 Anywhere St., Any City ST 12345</p>
+                        <p>1123-456-7890</p>
+                        <p>hello@reallygreatsite.com</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="row">
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
+        import { getDatabase, ref, get, set, child } from 'https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js';
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
 
-                <div class="col-lg-6 col-12 mb-4 pb-2">
-                    <h5 class="site-footer-title mb-3">Links</h5>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyBRr7eES1QDIVqkVAx4Q5br-zBjGJReSVU",
+        authDomain: "funeral-tributes-34a75.firebaseapp.com",
+        databaseURL: "https://funeral-tributes-34a75-default-rtdb.firebaseio.com",
+        projectId: "funeral-tributes-34a75",
+        storageBucket: "funeral-tributes-34a75.firebasestorage.app",
+        messagingSenderId: "146925072685",
+        appId: "1:146925072685:web:3394af135b129303a463a4",
+        measurementId: "G-ZFQP1KFPTC"
+        };
 
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app)
+        const analytics = getAnalytics(app);
 
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Benefits</a>
-                        </li>
+        document.getElementById("submit").addEventListener('click', function(e){
+            set(ref(db, 'tribute/' + document.getElementById("name").value), {
 
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Summit Objectives</a>
-                        </li>
+                username: document.getElementById("name").value,
+                message: document.getElementById("message").value
+            })
+        })
+    </script> -->
 
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Learning Objectives</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Attendance</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                    <h5 class="site-footer-title mb-3">Have a question?</h5>
-
-                    <p class="text-white d-flex mb-1">
-                        <a href="tel: 090-080-0760" class="site-footer-link">
-                            1 (876) 111-1111
-                        </a>
-                    </p>
-
-                    <p class="text-white d-flex">
-                        <a href="mailto:hello@company.com" class="site-footer-link">
-                            hello@company.com
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
-                    <h5 class="site-footer-title mb-3">Location</h5>
-
-                    <p class="text-white d-flex mt-3 mb-2">
-                        Hyatt Regency Trinidad, Trinidad and Tobago</p>
-
-                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
-                        <span>Our Maps</span>
-                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="16" cy="16" r="15.5"></circle>
-                                <line x1="10" y1="18" x2="16" y2="12"></line>
-                                <line x1="16" y1="12" x2="22" y2="18"></line>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="site-footer-bottom">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-3 col-12 mt-5">
-                        <p class="copyright-text">Copyright © FutureForward</p>
-                        <!-- <p class="copyright-text">Distributed by: <a href="https://themewagon.com">ThemeWagon</a></p> -->
-                    </div>
-
-                    <div class="col-lg-8 col-12 mt-lg-5">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Privacy Policy</a>
-                            </li>
-
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Your Feedback</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!--
-
-T e m p l a t e M o
-
--->
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="{{ url_for('static', filename='folder_1/js/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='folder_1/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='folder_1/js/jquery.sticky.js') }}"></script>
-    <script src="{{ url_for('static', filename='folder_1/js/click-scroll.js') }}"></script>
-    <script src="{{ url_for('static', filename='folder_1/js/custom.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        var countDownDate = new Date("Dec 27, 2024 00:00:00").getTime();
-        var x = setInterval(function(){
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-
-        },1000)
-
-    </script>
+    <script type="module" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
+
